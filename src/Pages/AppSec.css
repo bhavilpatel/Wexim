@@ -1,0 +1,125 @@
+.mobile-apps {
+    padding: 120px 0;
+}
+
+.app-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 90%;
+    margin: 0 auto;
+}
+
+.app-service {
+    margin: 0 auto;
+    text-align: center;
+}
+
+.app-section-left,
+.app-section-middle,
+.app-section-right {
+    width: 33.33%;
+    padding: 0 15px;
+}
+
+.app-sec-card {
+    text-align: center;
+    margin: 3rem 0;
+}
+
+.app-sec-card-icon {
+    font-size: 38px;
+    margin-bottom: 1.5rem;
+    transition: all .3s ease-in-out;
+    background: linear-gradient(to right, #3264f5 2%, #7202bb 82%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.app-sec-card-head {
+    font-size: 1.5rem;
+    margin-bottom: 1rem !important;
+    line-height: 1;
+    font-weight: 500;
+    margin-block: 0;
+}
+
+.app-sec-card-dis {
+    color: #6d6d6d;
+    font-weight: 300;
+    margin-block: 0;
+}
+
+.app-sec-card:hover .app-sec-card-icon {
+    transform: translateY(-5px);
+}
+
+.app-section-middle {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.mobile {
+    height: 100%;
+    width: 100%;
+    max-width: 280px;
+}
+
+.slider {
+    width: 73%;
+    position: absolute;
+    max-width: 235px;
+}
+
+.slider-img {
+    height: 100%;
+    width: 100%;
+}
+
+@media screen and (max-width:991px) and (max-width: 1080px) {
+    .slider {
+        width: 74%;
+        position: absolute;
+        max-width: 235px;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .app-section {
+        flex-direction: column;
+        width: 75%;
+    }
+
+    .app-section-left,
+    .app-section-middle,
+    .app-section-right {
+        width: 100%;
+        padding: 0;
+    }
+
+    .mobile {
+        height: 100%;
+        width: 100%;
+        max-width: 170px;
+    }
+
+    .slider {
+        max-width: 100%;
+        width: 70%;
+        position: absolute;
+        max-width: 142px;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .mobile-apps {
+        padding: 72px 0;
+    }
+
+    .app-section {
+        flex-direction: column;
+        width: 90%;
+    }
+}

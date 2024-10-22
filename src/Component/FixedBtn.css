@@ -1,0 +1,25 @@
+.fixed-btn {
+    font-size: 30px;
+    line-height: 45px;
+    color: #fff !important;
+    height: 45px;
+    width: 45px;
+    padding: 0;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    text-align: center;
+    text-decoration: none;
+    z-index: 99;
+    border-radius: 100%;
+    background-size: 200% auto;
+    background-image: linear-gradient(to right, #3264f5 0%, #7202bb 51%, #3264f5 100%);
+}
+
+.hide {
+    display: none;
+}
+
+.show {
+    display: block;
+}
