@@ -195,6 +195,19 @@
         flex-direction: column;
     }
 
+    .team-profile-right:before {
+        left: 0;
+        top: -100%;
+        transition: all ease-in-out 0.3s;
+    }
+
+    .team-profile-card:hover .team-profile-right:before {
+        left: 0%;
+        top: 0%;
+        opacity: 1;
+        visibility: visible;
+    }
+
     .team-card {
         width: 100%;
     }
