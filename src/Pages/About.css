@@ -39,6 +39,9 @@
     color: #6d6d6d;
     margin-bottom: 48px !important;
     margin-block: 0;
+    line-height: 26px;
+    font-size: 15px;
+    font-weight: 300;
 }
 
 .rigth-img {
@@ -76,15 +79,19 @@
     height: 100%;
     position: absolute;
     border-radius: 100px;
-    transition: width .6s ease;
-
+    text-align: center;
+    white-space: nowrap;
+    animation: process 3s ease-in-out;
 }
 
 .range-color-one {
-    width: 90%;
+    animation: process 3s ease-in-out;
+    width: 90%;  
+
 }
 
 .range-color-two {
+    animation: process 3s ease-in-out;
     width: 75%;
 }
 
@@ -270,7 +277,8 @@
         align-items: center;
     }
 
-    .about-dis, .about-main-head {
+    .about-dis,
+    .about-main-head {
         text-align: center;
     }
 

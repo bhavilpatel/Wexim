@@ -45,23 +45,6 @@ function About() {
     },
   ]
 
-
-  // useEffect(() => {
-  //   const handleScroll = () => {
-  //     const parallaxBackground = document.querySelector('.digital-services');
-  //     if (parallaxBackground) {
-  //       // Apply parallax effect by changing the background position
-  //       parallaxBackground.style.backgroundPositionY = -(window.scrollY * 0.4) + 'px';
-  //     }
-  //   };
-
-  //   window.addEventListener('scroll', handleScroll);
-  //   return () => {
-  //     window.removeEventListener('scroll', handleScroll);
-  //   };
-  // }, []);
-
-
   return (
     <div className='container'>
       <section className='page-link' id='about'>
@@ -80,7 +63,7 @@ function About() {
                         <div className='range-number' id='range-number'><Counter targetCount={item.rangeNumber} />%</div>
                       </div>
                       <div className='range'>
-                        <span className={item.rangeColor}></span>
+                        <span className={item.rangeColor} ></span>
                       </div>
                     </div>
                   ))}

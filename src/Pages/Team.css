@@ -43,10 +43,40 @@
     z-index: 1;
 }
 
+.team-profile-right:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: auto;
+    left: auto;
+    width: 100%;
+    height: 100%;
+    bottom: 0;
+    background-size: 200% auto;
+    background-image: linear-gradient(to right, #3264f5 0%, #7202bb 51%, #3264f5 100%);
+    opacity: 0;
+    visibility: hidden;
+    z-index: -10;
+}
+
+.team-profile-right:before {
+    left: -100%;
+    transition: all ease-in-out 0.3s;
+}
+
+.team-profile-card:hover .team-profile-right:before {
+    left: 0%;
+    opacity: 1;
+    visibility: visible;
+}
+
 .team-profile-img {
     height: 100%;
     width: 100%;
     transition: .2s ease-in-out;
+    z-index: 3;
+    position: relative;
+
 }
 
 .team-profile-card-content {
@@ -94,10 +124,6 @@
 
 .team-profile-card:hover .team-profile-img {
     scale: 1.1;
-}
-
-.team-profile-card:hover .team-profile-right {
-    background: linear-gradient(to right, #3264f5 2%, #7202bb 82%);
 }
 
 .team-profile-card-icon-hvr:hover {
