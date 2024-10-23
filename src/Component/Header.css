@@ -61,7 +61,9 @@
 }
 
 .fixed header .list-item-a {
-    color: black;
+    color: #2b2b2b;
+    font-size: 15px;
+    font-weight: 400;
 }
 
 .list-item-a {

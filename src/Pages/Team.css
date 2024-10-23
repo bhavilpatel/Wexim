@@ -141,7 +141,7 @@
 
 @media screen and (max-width: 767px) {
     .team-sec {
-        padding: 72px 0;
+        padding: 72px 10px;
     }
 
     .our-services-head-main {

@@ -37,7 +37,9 @@
 
 .work-section-img {
     border: 20px solid #fff;
-    width: 95%;
+    max-width: 500px;
+    max-height: 537px;
+    width: 100%;
 }
 
 .work-section-img-overlay {
@@ -152,7 +154,7 @@
 
 @media screen and (max-width: 576px) {
     .work-section-wrapper {
-        width: 90%;
+        width: 97%;
     }
 
     .work-section-img {
