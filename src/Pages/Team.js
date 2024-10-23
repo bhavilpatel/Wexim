@@ -93,8 +93,8 @@ function Team() {
     ]
 
     return (
-        <div className='container'>
-            <section className='team-sec' id='team'>
+        <div className='container container-sec'>
+            <section className='team-sec page-link' id='team'>
                 <div className='our-servise-box fade-in'>
                     <h6 className="our-services-head">Basic info about componay</h6>
                     <h2 className="our-services-head-main gradient-color">Creative Heads</h2>

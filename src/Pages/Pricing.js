@@ -112,31 +112,33 @@ function Pricing() {
 
     return (
         <div className='container'>
-            <section className='' id='pricing'>
-                <div className='pricing-upper-section'>
-                    <div className='our-servise-box app-service fade-in'>
-                        <h6 className="our-services-head">Most flexible pricing</h6>
-                        <h2 className="our-services-head-main gradient-color">Easy Pricing</h2>
-                        <p className='our-service-dis'>Curabitur mollis bibendum luctus. Duis suscipit vitae dui sed suscipit. Vestibulum auctor nunc vitae diam eleifend, in maximus metus sollicitudin. Quisque vitae sodales lectus. Nam porttitor justo sed mi finibus, vel tristique risus faucibus.</p>
-                    </div>
+            <section className='page-link' id='pricing'>
+                <div className='container-sec'>
+                    <div className='pricing-upper-section'>
+                        <div className='our-servise-box app-service fade-in'>
+                            <h6 className="our-services-head">Most flexible pricing</h6>
+                            <h2 className="our-services-head-main gradient-color">Easy Pricing</h2>
+                            <p className='our-service-dis'>Curabitur mollis bibendum luctus. Duis suscipit vitae dui sed suscipit. Vestibulum auctor nunc vitae diam eleifend, in maximus metus sollicitudin. Quisque vitae sodales lectus. Nam porttitor justo sed mi finibus, vel tristique risus faucibus.</p>
+                        </div>
 
-                    <div className='planes'>
-                        {planeCards.map(item => (
-                            <div className={item.cardNumber}>
-                                <h4 className='plane-card-head'>{item.palneName}</h4>
-                                <p className='plane-card-detail'>{item.planeDis}</p>
-                                <div className='plane-card-price'><h3 className='amount'><span className='doller'>$</span>{item.planePrize}</h3><span className='duration'>Month</span></div>
-                                <div className='plane-card-benefit'>
-                                    {benefit.map(item => (
-                                        <div className='plane-benefit'>
-                                            <i className={item.sign} />
-                                            <h4 className='plane-benefit-main'>{item.access}</h4>
-                                        </div>
-                                    ))}
+                        <div className='planes'>
+                            {planeCards.map(item => (
+                                <div className={item.cardNumber}>
+                                    <h4 className='plane-card-head'>{item.palneName}</h4>
+                                    <p className='plane-card-detail'>{item.planeDis}</p>
+                                    <div className='plane-card-price'><h3 className='amount'><span className='doller'>$</span>{item.planePrize}</h3><span className='duration'>Month</span></div>
+                                    <div className='plane-card-benefit'>
+                                        {benefit.map(item => (
+                                            <div className='plane-benefit'>
+                                                <i className={item.sign} />
+                                                <h4 className='plane-benefit-main'>{item.access}</h4>
+                                            </div>
+                                        ))}
+                                    </div>
+                                    <button className='plane-start'>Get Started</button>
                                 </div>
-                                <button className='plane-start'>Get Started</button>
-                            </div>
-                        ))}
+                            ))}
+                        </div>
                     </div>
                 </div>
                 <div className='pricing-lower-part'>

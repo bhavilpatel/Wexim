@@ -26,7 +26,7 @@ function Contact() {
     ]
     return (
         <div className='container'>
-            <section id='contact'>
+            <section className='page-link' id='contact'>
                 <div className='location-and-form'>
                     <div className='location fade-in-left'>
                         <div className='location-overlay'>

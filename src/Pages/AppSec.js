@@ -50,8 +50,8 @@ function AppSec() {
         },
     ]
     return (
-        <div className='container'>
-            <section className='mobile-apps' id='app-sec'>
+        <div className='container container-sec'>
+            <section className='mobile-apps page-link' id='app-sec'>
                 <div className='our-servise-box app-service fade-in'>
                     <h6 className="our-services-head">Most reliable application</h6>
                     <h2 className="our-services-head-main gradient-color">Mobile App Design</h2>

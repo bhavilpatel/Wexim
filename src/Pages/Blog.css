@@ -11,6 +11,8 @@
 }
 
 .blog-sec-left {
+    max-width: 720px;
+    margin: 0 auto;
     text-align: center;
     padding: 0 15px;
 }

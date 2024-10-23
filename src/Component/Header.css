@@ -7,10 +7,6 @@
 
 /* Flex center end */
 
-.fixed {
-    margin-bottom: 70px;
-}
-
 .header {
     max-width: 100%;
     width: 100%;
@@ -103,10 +99,10 @@
     font-size: 24px;
 }
 
-.underline::after {
+.list-item-a::after {
     content: "";
     position: absolute;
-    top: 83%;
+    top: 100%;
     left: 0;
     width: 100%;
     height: 3px;
@@ -117,7 +113,7 @@
     border-radius: 10px;
 }
 
-.active .underline::after {
+.active::after {
     transform: scaleX(1);
     transform-origin: center;
 }

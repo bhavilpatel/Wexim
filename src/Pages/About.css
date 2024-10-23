@@ -3,6 +3,7 @@
     background: linear-gradient(to right, #3264f5 2%, #7202bb 82%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
+    width: fit-content;
 }
 
 .about-section {
@@ -17,7 +18,7 @@
 }
 
 .left-sec {
-    padding: 0 80px;
+    padding: 0 80px 0 0;
 }
 
 .about-head {
@@ -115,6 +116,10 @@
 
 .our-servise-box {
     width: 60%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 .our-services-head {
@@ -144,7 +149,7 @@
 }
 
 .feture {
-    width: 80%;
+    width: 100%;
     transition: ease-in-out 0.2s;
 }
 
@@ -164,6 +169,10 @@
 
 .feture-card {
     padding: 0 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
 
 .card-dis {
@@ -176,16 +185,13 @@
 
 .digital-services {
     background-image: url(../Assets/Images/bg-img6.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;
+    background-size: cover !important;
+    background-repeat: no-repeat !important;
     background-attachment: fixed;
-    background-position: center 67.7672px;
     position: relative;
-    background-size: cover;
+    background-position: center center;
     width: 100%;
     height: 100%;
-    background-position: center center;
-    background-repeat: no-repeat;
     overflow: hidden;
     color: white;
     text-align: center;
@@ -249,10 +255,6 @@
     .our-services {
         padding: 72px 0;
     }
-
-    .digital-services {
-        background-attachment: local;
-    }
 }
 
 @media screen and (max-width: 768px) {
@@ -268,7 +270,7 @@
         align-items: center;
     }
 
-    .about-dis {
+    .about-dis, .about-main-head {
         text-align: center;
     }
 
@@ -295,5 +297,9 @@
 
     .our-service-dis {
         margin-bottom: 40px !important;
+    }
+
+    .digital-services {
+        background-attachment: local;
     }
 }

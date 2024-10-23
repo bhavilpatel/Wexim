@@ -9,6 +9,11 @@
     width: 50%;
 }
 
+.form {
+    max-width: 720px;
+    margin: 0 auto;
+}
+
 .location {
     background-image: url(../Assets/Images/address-image.jpg);
     height: 100%;

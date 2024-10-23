@@ -8,7 +8,7 @@
 }
 
 .team-card {
-    max-width: 87%;
+    max-width: 100%;
 
 }
 
@@ -32,6 +32,7 @@
 }
 
 .team-profile-right {
+    position: relative;
     cursor: default;
     background-color: #fbfbfb;
     display: flex;
@@ -39,6 +40,7 @@
     justify-content: center;
     text-align: start;
     height: auto;
+    z-index: 1;
 }
 
 .team-profile-img {
@@ -126,6 +128,10 @@
 .right-hide {
     display: none;
 }
+
+/* .team-card .slick-active div:first-child {
+  display: flex;
+} */
 
 @media only screen and (max-width: 991px) {
     .team-card {

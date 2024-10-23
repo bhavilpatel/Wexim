@@ -12,7 +12,7 @@ function Header() {
   useEffect(() => {
     const handleScroll = () => {
       const scrollPosition = window.scrollY;
-      if (scrollPosition > window.innerHeight / 2) {
+      if (scrollPosition > window.innerHeight / 8) {
         setShowHeader(true);
       } else {
         setShowHeader(false);
@@ -70,16 +70,40 @@ function Header() {
   ]
 
 
+  useEffect(() => {
+    document.addEventListener("scroll", () => {
+      const sections = document.querySelectorAll(".page-link");
+      const navLinks = document.querySelectorAll(".list-item-a");
+
+      let currentSection = "";
+
+      sections.forEach(section => {
+        const sectionTop = section.offsetTop - 60;
+        if (window.scrollY >= sectionTop) {
+          currentSection = section.getAttribute("id");
+        }
+      });
+
+      navLinks.forEach(link => {
+        link.classList.remove("active");
+        if (link.getAttribute("href") === `#${currentSection}`) {
+          link.classList.add("active");
+        }
+      });
+    });
+  })
+
+
   return (
     <div className={`container  ${showHeader ? 'fixed' : 'absolute'}`}>
       <header className='header flex-center' id='header'>
-        <nav className='nav'>
+        <nav className='nav container-sec'>
           <ul className='ul'>
             {leftLinks.map(item => (
-              <a href={item.href} className='list-item-a'><li className='list-item underline'>{item.name}</li></a>
+              <a href={item.href} className='list-item-a'><li className='list-item underline' >{item.name}</li></a>
             ))}
-            <a href="#home" className='list-item-a white-logo logo'><li className='list-item'><img src={whiteLogo} alt="white-logo" /></li></a>
-            <a href="#home" className='list-item-a black-logo logo'><li className='list-item'><img src={blackLogo} alt="black-logo" /></li></a>
+            <a href="#" className='list-item-a white-logo logo'><li className='list-item'><img src={whiteLogo} alt="white-logo" /></li></a>
+            <a href="#" className='list-item-a black-logo logo'><li className='list-item'><img src={blackLogo} alt="black-logo" /></li></a>
             {rightLinks.map(item => (
               <a href={item.href} className='list-item-a'><li className='list-item underline'>{item.name}</li></a>
             ))}

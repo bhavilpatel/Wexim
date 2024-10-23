@@ -6,7 +6,7 @@ import blogImg from '../Assets/Images/blog-half1.jpg'
 function Blog() {
     return (
         <div className='container'>
-            <section className='blog' id='blog'>
+            <section className='blog page-link' id='blog'>
                 <div className='blog-sec-left'>
                     <h6 className='blog-head'>January 14, 2019</h6>
                     <h2 className='blog-head-main'>Living Your Dreams</h2>
